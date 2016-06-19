@@ -18,6 +18,7 @@ module.exports = {
     new webpack.optimize.CommonsChunkPlugin("vendor", "vendor.bundle.js"),
     new webpack.HotModuleReplacementPlugin()
   ],
+  devtool: "#source-map",
   devServer: {
     hot: true,
     inline: true,

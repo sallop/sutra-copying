@@ -1,18 +1,13 @@
+import ChatApp from './components/ChatApp.react';
+import ChatExampleData from './ChatExampleData';
+import ChatWebAPIUtils from './utils/ChatWebAPIUtils';
+
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ChatApp from './components/ChatApp.react';
-// import ChatExampleData = from './ChatExampleData';
-// import ChatWebAPIUtils from './utils/ChatWebAPIUtils';
+// window.React = React; // export for http://fb.me.react-devtools
 
-// ChatExampleData.init(); // load example data into localstorage
-
-// ChatWEbAPIUtils.getAllMessages();
-
-// const ChatApp = React.createClass({
-//   render: function() {
-//     return (<div>Text text</div>);
-//   }
-// });
+ChatExampleData.init(); // load example data into localstorage
+ChatWebAPIUtils.getAllMessages();
 
 ReactDOM.render(<ChatApp/>, document.getElementById('container'));
 
